@@ -1,4 +1,5 @@
 {
+  "homepage": "http://bharat7021.github.io/Portfolio",
   "name": "simplefolio",
   "version": "1.0.1",
   "private": "true",
@@ -6,7 +7,9 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/Bharat7021/Portfolio"
   },
-  "homepage": "http://bharat7021.github.io/Portfolio",
+  
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.8.2",
